@@ -6,8 +6,8 @@ import pickle
 from typing import Union, Dict, Optional
 import pycolmap
 
-from hloc.localize_sfm import pose_from_cluster, do_covisibility_clustering
-from hloc.utils.parsers import parse_image_lists, parse_retrieval
+from lighthloc.localize_sfm import pose_from_cluster, do_covisibility_clustering
+from lighthloc.utils.parsers import parse_image_lists, parse_retrieval
 
 from . import logger
 from .features import FeatureManager

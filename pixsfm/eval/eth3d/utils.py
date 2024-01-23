@@ -1,7 +1,7 @@
 from dataclasses import dataclass, fields
 from pathlib import Path
 
-from hloc import extract_features, match_features,\
+from lighthloc import extract_features, match_features,\
     match_dense, pairs_from_covisibility
 
 from .config import feature_configs, match_configs

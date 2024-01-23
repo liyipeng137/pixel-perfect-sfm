@@ -3,7 +3,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-from hloc.utils.io import find_pair
+from lighthloc.utils.io import find_pair
 
 from ..base import Map_NameKeypoints
 

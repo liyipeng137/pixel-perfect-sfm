@@ -10,8 +10,8 @@ from typing import List, Set, Dict, Any, Optional
 import h5py
 
 import pycolmap
-from hloc.utils.parsers import parse_retrieval, names_to_pair
-from hloc.match_dense import assign_keypoints, match_dense
+from lighthloc.utils.parsers import parse_retrieval, names_to_pair
+from lighthloc.match_dense import assign_keypoints, match_dense
 
 from ... import logger, set_debug, keypoint_adjustment, extract
 from ...refine_hloc import PixSfM

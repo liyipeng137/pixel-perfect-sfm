@@ -15,8 +15,8 @@ from .util.hloc import (
 )
 
 try:
-    import hloc.triangulation
-    import hloc.reconstruction
+    import lighthloc.triangulation
+    import lighthloc.reconstruction
 except ImportError:
     logger.warning("Could not import hloc.")
     hloc = None
@@ -105,11 +105,11 @@ class PixSfM(PixSfM_colmap):
         model_path = output_dir / "hloc"
         model_path.mkdir(exist_ok=True, parents=False)
         if reference_model_path is None:
-            hloc.reconstruction.main(
+            lighthloc.reconstruction.main(
                 model_path, image_dir, pairs_path, keypoints_path,
                 matches_path, **hloc_args)
         else:
-            hloc.triangulation.main(
+            lighthloc.triangulation.main(
                 model_path, reference_model_path, image_dir, pairs_path,
                 keypoints_path, matches_path, **hloc_args)
         return model_path
